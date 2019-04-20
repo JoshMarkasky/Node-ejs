@@ -1,0 +1,22 @@
+{
+  "name": "nodelogin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "set DEBUG=* & nodemon server.js"
+  },
+  "author": "Joshua Markasky",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "standard": "^12.0.1"
+  }
+}
