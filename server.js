@@ -43,6 +43,7 @@ app.use(session({
 }))
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/js'));
 
 app.listen(PORT, (err) => {
   if(err){

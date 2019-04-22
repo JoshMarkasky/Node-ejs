@@ -1,6 +1,14 @@
 #navbar {
   margin: 0;
   padding: 0;
-  background-color: aquamarine;
+  background-color: #303030;
   z-index: 1;
+}
+
+#navbar a {
+  color: #3C873A;
+}
+
+#navbar a:hover {
+  color: #68A063;
 }

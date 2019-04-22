@@ -1,0 +1,92 @@
+.image {
+    width: 80%;
+    height: 100%;
+    margin-left: 4rem;
+    margin-top: -25rem;
+}
+
+#index1Con {
+    height: 45rem;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+#index2Con {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+
+}
+
+#index2Con p {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+}
+
+#index2Con .col1 {
+    background-color: #3C873A;
+    height: 25rem;
+    border: 1px solid black;
+}
+
+#index2Con .col2 {
+    background-color: #303030;
+    height: 25rem;
+    border: 1px solid black;
+}
+
+#square2 h2 {
+    margin-top: 5rem;
+}
+
+#index3Con {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+#index3Con p {
+    margin-top: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#index3Con .col2 {
+    background-color: #3C873A;
+    height: 22rem;
+    border: 1px solid black;
+}
+
+#index3Con .col1 {
+    background-color: #303030;
+    height: 25rem;
+    border: 1px solid black;
+}
+
+/* animations */
+#square1 {
+    animation: moveDown;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#square3 {
+    animation: moveDown2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveDown {
+    0% { margin-top: 0; }
+    100% { margin-top: 25rem }
+}
+
+@keyframes moveDown2 {
+    0% { margin-top: 0; }
+    100% { margin-top: 25rem }
+}
+
+
