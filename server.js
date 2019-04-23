@@ -103,6 +103,9 @@ app.get('/home', redirectLogin, (req, res) => {
       <li>username: ${user.username}</li>
       <li>password: ${user.password}</li>
     </ul>
+    <form method='post' action='/logout'>
+        <button>Logout</button>
+    </form>
   `);
 });
 

@@ -1,8 +1,9 @@
 #navbar {
-  margin: 0;
-  padding: 0;
-  background-color: #303030;
-  z-index: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+    z-index: 1;
+    border-bottom: 1px solid black;
 }
 
 #navbar a {
