@@ -1,32 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Title -->
-    <title>Main Page</title>
-    
-    <!--- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="description" content="NodeJs login system">
-    <meta name="keywords" content="HTML,CSS,JavaScript,NodeJs,Ejs">
-    <meta name="Joshua Markasky" content="NodeJs login system show case">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- boostrap 4 cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!--css links -->
-    <link href="/css/all.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/navbar.css" rel="stylesheet" type="text/css"/>
-    <link href="/css/login.css" rel="stylesheet" type="text/css" />
+      <!-- Title -->
+      <title>Main Page</title>
+
+      <!--- meta tags -->
+      <meta charset="UTF-8">
+      <meta name="description" content="NodeJs login system">
+      <meta name="keywords" content="HTML,CSS,JavaScript,NodeJs,Ejs">
+      <meta name="Joshua Markasky" content="NodeJs login system show case">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- bootstrap 4 cdn -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <!--css links -->
+      <link href="/css/all.css" rel="stylesheet" type="text/css"/>
+      <link href="/css/navbar.css" rel="stylesheet" type="text/css"/>
+      <link href="/css/index.css" rel="stylesheet" type="text/css" />
+
   </head>
   <body>
-    <% include partials/nav.ejs %>
-    
-    <div class="container">
-      <div class="row">
-        <h2>Main Page</h2>    
+
+      <!-- Navbar -->
+      <% include partials/nav.ejs %>
+
+      <!-- container-2 -->
+      <div id="index2Con" class="container">
+          <div class="row">
+              <div id="square1" class="col-md-6 col1">
+                  <img id="nodeImg" alt="" class="image" src="/img/logo.svg" />
+                      <div class="row">
+                          <div class="mx-auto">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur,
+                                autem consectetur consequatur dolorum enim eos, eum eveniet fugiat fugit hic, incidunt
+                                quam repellendus similique. Commodi delectus, pariatur. Eos.
+                              </p>
+                          </div>
+                      </div>
+              </div>
+              <div id="square2" class="col-md-6 col2">
+                  <div class="row">
+                      <div style="color: white;" class="mx-auto">
+                          <div class="col-md-12">
+                              <div class="row">
+                                  <div class="mx-auto">
+                                      <h2>why use node?</h2>
+                                  </div>
+                              </div>
+                          </div>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aspernatur,
+                            autem consectetur consequatur dolorum enim eos, eum eveniet fugiat fugit hic, incidunt
+                            quam repellendus similique. Commodi delectus, pariatur. Eos.
+                          </p>
+                      </div>
+                  </div>
+                  <img id="nodeImg2" alt="" class="image2 hidden" src="/img/logo.svg" />
+              </div>
+          </div>
       </div>
-    </div>
+
+      <div id="index3Con" class="container">
+          <div class="row">
+              <div id="square3"  class="col-md-6 col2">
+                  <div class="row">
+                      <div class="mx-auto">
+
+                      </div>
+                  </div>
+              </div>
+              <div id="square4" class="col-md-6 col1">
+                  <div class="row">
+                      <div class="mx-auto">
+                          <h3>test</h3>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script src="/js/index.js"></script>
     
   </body>
 </html>
