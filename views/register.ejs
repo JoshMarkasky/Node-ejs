@@ -26,17 +26,29 @@
 
         <!-- Container  -->
         <div id="regCon" class="container">
-            <div class="row">
-                <div class="col-md-4 offset-md-4 form-group">
-                    <h2>sign up</h2>
+            <div id="row2" class="row">
+                <div id="row1" class="col-md-4 offset-md-4 form-group">
+                    <div class="row">
+                        <div class="mx-auto">
+                            <h2>sign up</h2>
+                        </div>
+                    </div>
                     <form method="post" action="/register">
                         <label for="username">username</label><br>
                         <input id="username" class="form-control" name='username' type="text" required/><br>
                         <label for="password">Password</label><br>
                         <input id="password" class="form-control" name="password" type="password" required/><br>
-                        <input class="btn btn-primary bg-primary" type="submit" />
+                        <div class="row">
+                            <div class="mx-auto">
+                                <input class="btn btn-primary bg-primary" type="submit" />
+                            </div>
+                        </div>
                     </form>
-                    <a href='/login'>login</a>
+                    <div class="row">
+                        <div class="mx-auto">
+                            <a href='/login'>login</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
