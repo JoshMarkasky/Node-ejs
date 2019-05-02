@@ -17,16 +17,32 @@
 }
 
 #nodeImg2 {
-    margin-top: 12rem;
+    margin-top: 10rem;
     margin-left: 10rem;
     height: 20rem;
     width: 20rem;
 }
 
 #nodeImg3 {
-    margin-top: 20rem;
+    margin-top: -25rem;
+    margin-left: 10rem;
     height: 20rem;
     width: 20rem;
+}
+
+#nodeImg4 {
+    margin-top: 10rem;
+    margin-left: 10rem;
+    height: 20rem;
+    width: 20rem;
+}
+
+div#square1 p{
+    margin-top: 7rem;
+}
+
+div#square4 .mx-auto {
+    margin-top: 3rem;
 }
 
 #index1Con {

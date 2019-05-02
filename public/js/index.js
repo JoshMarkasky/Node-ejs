@@ -5,7 +5,7 @@ window.setInterval(() => {
         document.body['offsetWidth'],
         document.documentElement['offsetWidth'] >= 767
       ) {
-        window.onscroll = () => {img1()};
+        window.onscroll = () => {img1(), img2(), img3()};
     } else {
         
     }
@@ -19,8 +19,16 @@ let img1 = () => {
 }
 
 let img2 = () => {
-    if(document.body.scrollTop > 120 || document.documentElement.scrollTop > 120){
-        document.getElementById('nodeImg2').classList.remove('hidden');
-        document.getElementById('nodeImg2').className = 'fadeIn';    
+    if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+        document.getElementById('nodeImg3').classList.remove('hidden');
+        document.getElementById('nodeImg3').className = 'fadeIn';
     }
 }
+
+let img3 = () => {
+    if(document.body.scrollTop > 750 || document.documentElement.scrollTop > 750) {
+        document.getElementById('nodeImg4').classList.remove('hidden');
+        document.getElementById('nodeImg4').className = 'fadeIn';
+    }
+}
+

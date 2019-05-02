@@ -1,6 +1,6 @@
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <a class="navbar-brand" href="#">NodeJs</a>
+    <a class="navbar-brand" href="/">NodeJs</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,18 +8,37 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">login<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="/">Main page</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">login</a>
-        </li>
+        <%if(session != null || session != undefined){%>
+            <li class="nav-item">
+              <a class="nav-link" href="/home">Profile</a>
+            </li>
+        <%}%>
+        <%if(session != null || session != undefined){%>
+            <li class="nav-item">
+                <form method='post' action='/logout'>
+                    <input type="submit" value="logout" style="background-color: transparent; border: 0;">
+                </form>
+            </li>
+        <%}%>
+        <%if(session == null || session == undefined){%>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">register</a>
+            </li>
+        <%}%>
+        <%if(session == null || session == undefined){%>
+            <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+            </li>
+        <%}%>
+
       </ul>
     </div>
   </div>
 </nav>
+
+<script>
+
+</script>
+

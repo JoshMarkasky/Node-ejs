@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     background-color: #303030;
-    z-index: 1;
     border-bottom: 1px solid black;
+    z-index: 1;
 }
 
 #navbar a {
@@ -12,4 +12,12 @@
 
 #navbar a:hover {
   color: #68A063;
+}
+
+@media (max-width: 576px) {
+
+    #navbar {
+        width: 100%;
+    }
+
 }

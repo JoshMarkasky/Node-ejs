@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Title -->
+        <title>Login Form</title>
+
+        <!--- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="description" content="NodeJs login system">
+        <meta name="keywords" content="HTML,CSS,JavaScript,NodeJs,Ejs">
+        <meta name="Joshua Markasky" content="NodeJs login system show case">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- boostrap 4 cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!--css links -->
+        <link href="/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/navbar.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/home.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+
+        <!--Navabr -->
+        <% include partials/nav.ejs %>
+
+        <!-- container -->
+        <div id="homeCon" class="container">
+            <div class="row">
+                <h2>home page</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-md-4 offset-md-5">
+                    <h2>username: ${user.username}</h2>
+                    <h2>password: ${user.password}</h2>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

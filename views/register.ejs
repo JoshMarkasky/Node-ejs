@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!--- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="description" content="NodeJs login system">
+        <meta name="keywords" content="HTML,CSS,JavaScript,NodeJs,Ejs">
+        <meta name="Joshua Markasky" content="NodeJs login system show case">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- boostrap 4 cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+        <!--css links -->
+        <link href="/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/navbar.css" rel="stylesheet" type="text/css"/>
+        <link href="/css/register.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+    
+        <!--Navabr -->
+        <% include partials/nav.ejs %>
+
+        <!-- Container  -->
+        <div id="regCon" class="container">
+            <div class="row">
+                <div class="col-md-4 offset-md-4 form-group">
+                    <h2>sign up</h2>
+                    <form method="post" action="/register">
+                        <label for="username">username</label><br>
+                        <input id="username" class="form-control" name='username' type="text" required/><br>
+                        <label for="password">Password</label><br>
+                        <input id="password" class="form-control" name="password" type="password" required/><br>
+                        <input class="btn btn-primary bg-primary" type="submit" />
+                    </form>
+                    <a href='/login'>login</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

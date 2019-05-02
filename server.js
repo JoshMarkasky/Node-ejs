@@ -71,19 +71,10 @@ const redirectHome = (req, res, next) => {
 }
 
 app.get('/', (req, res) => {
-  const { userId } = req.session 
+  const { userId } = req.session
 
-  res.render('index');
-//  res.send(`<h2>main page</h2>
-//    ${userId ? `    <a href='home'>Home</a>
-//    <form method='post' action='/logout'>
-//      <button>Logout</button>
-//    </form>
-//` : `
-//       <a href='/login'>Login</a>
-//    <a href='/register'>Register</a>
-//    `}
-//    `);
+  res.render('index', { session: userId });
+
 });
 
 app.use((req, res, next) => {
@@ -95,19 +86,20 @@ app.use((req, res, next) => {
 }) 
 
 app.get('/home', redirectLogin, (req, res) => {
-  const { user } = res.locals
-  
-  res.send(`<h2>home page</h2>
-    <a href='/'>Main</a>
-    <ul>
-      <li>username: ${user.username}</li>
-      <li>password: ${user.password}</li>
-    </ul>
-    <form method='post' action='/logout'>
-        <button>Logout</button>
-    </form>
-  `);
+  const { userId } = req.session
+  console.log(req.session.userId);
+  console.log(req.session);
+  console.log(req.session.password);
+
+  res.render('home',{session: userId});
+
 });
+
+app.get('navbar', (req, res) => {
+
+
+  res.render({session: 1});
+})
 
 app.get('profile', redirectLogin, (req, res) => {
   const { user } = res.locals;
@@ -115,33 +107,12 @@ app.get('profile', redirectLogin, (req, res) => {
 
 app.get('/login', redirectHome, (req, res) => {
   
-res.render('login');
-  
-//  res.send(`
-//    <h2>Login</h2>
-//    <form method="POST" action="login">
-//    <label for="username">username</label><br>
-//    <input id="username" name='username' type="text" required/><br>
-//    <label for="password">Password</label><br>
-//    <input id="password" name="password" type="password" required/>
-//    <input type="submit" />
-//  </form>
-//  <a href='/register'>Register</a>
-//  `);
+res.render('login', {session: req.session.Session});
+
 })
 
 app.get('/register', redirectHome, (req, res) => {
-    res.send(`
-    <h2>sign up</h2>
-    <form method="post" action="/register">
-    <label for="username">username</label><br>
-    <input id="username" name='username' type="text" required/><br>
-    <label for="password">Password</label><br>
-    <input id="password" name="password" type="password" required/>
-    <input type="submit" />
-  </form>
-  <a href='/login'>login</a>
-  `);
+    res.render('register', {session: req.session.Session});
 })
 
 app.post('/login', redirectHome, (req, res) => {
