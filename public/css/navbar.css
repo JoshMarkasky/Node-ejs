@@ -1,7 +1,7 @@
 #navbar {
     margin: 0;
     padding: 0;
-    background-color: #303030;
+    background-color: #68A063;
     border-bottom: 1px solid black;
     z-index: 1;
 }
@@ -11,7 +11,19 @@
 }
 
 #navbar a:hover {
-  color: #68A063;
+  color: #303030;
+}
+
+#logout {
+    margin-top: .45rem;
+}
+
+#logout input {
+    color:  #3C873A;
+}
+
+#logout input:hover {
+    color:  #303030;
 }
 
 @media (max-width: 576px) {

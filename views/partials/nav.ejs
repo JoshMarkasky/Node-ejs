@@ -16,7 +16,7 @@
             </li>
         <%}%>
         <%if(session != null || session != undefined){%>
-            <li class="nav-item">
+            <li id="logout" class="nav-item">
                 <form method='post' action='/logout'>
                     <input type="submit" value="logout" style="background-color: transparent; border: 0;">
                 </form>

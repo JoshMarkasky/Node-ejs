@@ -87,11 +87,9 @@ app.use((req, res, next) => {
 
 app.get('/home', redirectLogin, (req, res) => {
   const { userId } = req.session
-  console.log(req.session.userId);
-  console.log(req.session);
-  console.log(req.session.password);
+  const { user } = res.locals
 
-  res.render('home',{session: userId});
+  res.render('home',{session: userId, username: user.username, password: user.password});
 
 });
 
